@@ -1,10 +1,10 @@
-# Verificación de DNA
+## Verificación de DNA
 Servicio que detecta si una persona tiene diferencias genéticas basándose en su ADN.
 
 ## Ejecución en modo local
 Ejecutar el comando `npm run dev` para ejecutar el servicio en modo de desarrollo. La URL del servicio es `http://localhost:3000`. La aplicación se recarga automáticamente al realizar cualquier cambio en el código fuente.
 
-### Variables de entorno
+## Variables de entorno
 La aplicación utiliza dos variables de entorno: 
 `PORT`: Indica el puerto en el que se ejecuta la aplicación. El valor por defecto es 3000.
 `DATABASE`: Cadena de conexión al servidor de BD.
@@ -15,7 +15,7 @@ Para almacenar la información de las mutaciones realizadas, la aplicación util
 ## Ejecución de pruebas unitarias
 Ejecutar el comando `npm run test` para las pruebas unitarias del servicio de verificación de ADN
 
-### Verificación
+## Verificación
 Para ejecutar la verificación, enviar una petición `POST` a la ruta `/mutation`. Por ejemplo, en modo local sería `http://localhost:3000/mutation`. Deberá enviar un objeto JSON con el siguiente formato:
 ```js
 {
@@ -46,7 +46,7 @@ En caso contrario recibirá una respuesta `HTTP 403` con el siguiente contenido:
 }
 ```
 
-### Stats
+## Stats
 Para obtener los stats de las verificaciones realizadas, deberá enviar una petición `GET` a la ruta `/stats`. En modo local sería `http://localhost:3000/stats`. Recibirá una respuesta con el siguiente contenido:
 ```js
 {
@@ -56,3 +56,6 @@ Para obtener los stats de las verificaciones realizadas, deberá enviar una peti
     ratio: 0.4
 }
 ```
+
+## Swagger
+Para obtener los end points documentados con swagger en modo local sería ingresar a la ruta `http://localhost:3000/api-documentation`
