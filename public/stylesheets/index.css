@@ -1,0 +1,11 @@
+html, body {
+    height: 100%;
+    background-color: #eeeeee;
+}
+.container {
+    height: 100%;
+}
+.shadow-container {
+    box-shadow: 3px 5px 12px 0 rgba(25,24,52,0.13);
+    border-radius: 14px;
+}
