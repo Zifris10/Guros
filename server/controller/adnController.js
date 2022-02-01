@@ -91,7 +91,7 @@ const getStats = async (req, res) => {
             status: true,
             count_mutations: withMutation,
             count_no_mutation: withOutMutation,
-            ratio: Number(ratio.toFixed(2))
+            ratio: isNaN(ratio) ? 0 : Number(ratio.toFixed(2))
         }
 
         res.status(200).send(respuesta);

@@ -15,13 +15,14 @@ Para almacenar la información de las mutaciones realizadas, la aplicación util
 ## Prisma OMR
 Actualmente se esta utilizando el OMR de Prisma. Para mayor información acerca del OMR visitar su documentación completa en `https://www.prisma.io/`.
 Para poder crear las tablas en postgreSQL es necesario ejecutar los siguientes comandos:
-
-## Ejecución de pruebas unitarias
-Ejecutar el comando `npm run test` para las pruebas unitarias del servicio de verificación de ADN
 ```js
 npx prisma migrate dev (pedirá ingresar un nombre, puede ser opcional)
 npx prisma generate
 ```
+Una vez terminado el proceso, dentro de la carpeta `prisma/migrations` encontrarás toda la información relacionada con la BD.
+
+## Ejecución de pruebas unitarias
+Ejecutar el comando `npm run test` para las pruebas unitarias del servicio de verificación de ADN
 
 ## Verificación
 Para ejecutar la verificación, enviar una petición `POST` a la ruta `/mutation`. Por ejemplo, en modo local sería `http://localhost:3000/mutation`. Deberá enviar un objeto JSON con el siguiente formato:
