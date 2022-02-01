@@ -12,8 +12,6 @@ const cors = require('cors');
 
 const app = express();
 
-app.use(cors());
-
 app.set('views', '../views');
 
 app.set('view engine', 'pug');
