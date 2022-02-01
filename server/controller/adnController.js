@@ -68,8 +68,6 @@ const getStats = async (req, res) => {
 
     try {
 
-        console.log('Llego');
-
         let countWith = {
             where: {
 				hasMutation: true
@@ -99,8 +97,6 @@ const getStats = async (req, res) => {
         res.status(200).send(respuesta);
 
     } catch (error) {
-
-        console.log(error);
 
         res.status(500).send({ error: 'Ocurrió un error interno en el servidor, por favor intenta de nuevo.' });
 
