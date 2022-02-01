@@ -1,4 +1,4 @@
-## Verificación de DNA
+## Verificación de ADN
 Servicio que detecta si una persona tiene diferencias genéticas basándose en su ADN.
 
 ## Ejecución en modo local
