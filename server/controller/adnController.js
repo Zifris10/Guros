@@ -87,11 +87,21 @@ const getStats = async (req, res) => {
 
         let ratio = withMutation / withOutMutation;
 
+        if(isNaN(ratio) || ratio == Infinity) {
+
+            ratio = 0;
+
+        } else {
+
+            ratio = Number(ratio.toFixed(2));
+
+        }
+
         let respuesta = {
             status: true,
             count_mutations: withMutation,
             count_no_mutation: withOutMutation,
-            ratio: isNaN(ratio) ? 0 : Number(ratio.toFixed(2))
+            ratio
         }
 
         res.status(200).send(respuesta);
