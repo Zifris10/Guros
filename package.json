@@ -1,0 +1,45 @@
+{
+  "name": "guros",
+  "version": "1.0.0",
+  "description": "Proyecto DNA",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server/server",
+    "start": "node server/server",
+    "test": "jest --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zifris10/Guros.git"
+  },
+  "keywords": [
+    "nodejs",
+    "postgreSQL",
+    "express"
+  ],
+  "author": "Eduardo Martínez Torres",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zifris10/Guros/issues"
+  },
+  "homepage": "https://github.com/Zifris10/Guros#readme",
+  "engines": {
+    "node": "14.x",
+    "npm": ">=6.0.0"
+  },
+  "devDependencies": {
+    "jest": "^27.4.7",
+    "nodemon": "^2.0.15",
+    "prisma": "^3.8.1"
+  },
+  "dependencies": {
+    "@prisma/client": "^3.8.1",
+    "dna-mutation": "^1.0.3",
+    "express": "^4.17.2",
+    "swagger-jsdoc": "^6.1.0",
+    "swagger-ui-express": "^4.3.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
